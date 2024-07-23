@@ -1,0 +1,74 @@
+@import "../../../variables.scss";
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $primary-color;
+
+  .auth-title {
+    margin-bottom: 10px; /* Increase margin bottom for title */
+    font-size: 40px; /* Increase font size for title */
+    font-weight: bold; /* Add font weight for emphasis */
+    color: $accent-color;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow for depth */
+    text-transform: uppercase;
+  }
+
+  input {
+    width: 300px;
+    padding: 15px; /* Increase padding for input */
+    margin: 0px 0px 15px; /* Increase bottom margin for input */
+    border: 2px solid $accent-color; /* Increase border thickness */
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: black;
+
+    &:focus {
+      outline: none;
+      border-color: $secondary-color;
+    }
+  }
+
+  button {
+    width: 300px;
+    padding: 15px; /* Increase padding for button */
+    margin-top: 10px;
+    background-color: $secondary-color;
+    color: $accent-color-2;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add box shadow for depth */
+
+    &:hover {
+      background-color: lighten($secondary-color, 10%);
+    }
+
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+
+  p {
+    color: $accent-color;
+  }
+
+  .register-link {
+    color: $accent-color-2;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+      color: #1de289;
+    }
+  }
+}

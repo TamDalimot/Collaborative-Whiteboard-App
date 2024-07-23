@@ -1,0 +1,43 @@
+@import "../../variables.scss";
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $primary-color; /* Use primary color */
+}
+
+.not-found h1 {
+  font-size: 50px;
+  color: $accent-color; /* Use text color */
+  margin-bottom: 10px;
+}
+
+.not-found p {
+  font-size: 18px;
+  color: $accent-color; /* Use light text color */
+  margin-bottom: 20px;
+}
+
+.initial-page-button button {
+  padding: 15px; /* Adjusted padding for button */
+  margin-top: 10px;
+  background-color: $secondary-color; /* Use secondary color */
+  color: $accent-color-2; /* Use accent color */
+  border: none;
+  border-radius: 10px; /* Adjusted border-radius for button */
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold; /* Added font weight for button */
+  text-transform: uppercase; /* Added text-transform for button */
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: lighten(
+      $secondary-color,
+      10%
+    ); /* Lighten secondary color on hover */
+  }
+}

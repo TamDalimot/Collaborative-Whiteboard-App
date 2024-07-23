@@ -1,0 +1,81 @@
+@import "../../../variables.scss";
+
+.register-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $primary-color;
+
+  .auth-title {
+    margin-bottom: 10px; /* Increase margin bottom for spacing */
+    font-size: 32px; /* Increase font size for title */
+    color: $accent-color; /* Custom color for title */
+    font-weight: bold; /* Add font weight for emphasis */
+    text-transform: uppercase; /* Uppercase text */
+  }
+
+  input {
+    width: 300px;
+    padding: 15px; /* Increase padding for input fields */
+    margin: 0px 0px 15px; /* Increase margin bottom for spacing */
+    border: 2px solid $accent-color; /* Increase border width and change color */
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 18px; /* Increase font size for input text */
+    color: black; /* Change text color to black */
+
+    &:focus {
+      outline: none;
+      border-color: $secondary-color; /* Change border color on focus */
+    }
+  }
+
+  button {
+    width: 300px;
+    padding: 15px; /* Increase padding for buttons */
+    margin-top: 20px; /* Increase margin top for spacing */
+    background-color: $secondary-color; /* Secondary color for buttons */
+    color: $accent-color-2; /* Custom color for button text */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px; /* Increase font size for buttons */
+    font-weight: bold; /* Add font weight for emphasis */
+    text-transform: uppercase; /* Uppercase text */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+
+    &:hover {
+      background-color: lighten(
+        $secondary-color,
+        10%
+      ); /* Lighten button color on hover */
+    }
+
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+
+  .error-message {
+    color: red;
+    margin-bottom: 20px; /* Increase margin bottom for spacing */
+  }
+
+  p {
+    color: $accent-color; /* Custom color for paragraph text */
+    margin-bottom: 10px; /* Increase margin bottom for spacing */
+  }
+
+  .login-link {
+    color: $accent-color-2; /* Custom color for login link */
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+      color: #1de289; /* Change color on hover */
+    }
+  }
+}
